@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block home %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+</head>
+    <br>
+    <h1 style="color: rgba(0,0,0,.6);
+    background: #e4e3e3;
+    text-shadow: 3px 2px 3px rgba(255,255,255,.2); margin: 15px; text-align: center; height: 30px;">MODELS </h1><br>
+    <center>
+        <hr><br><br><br><br>
+        <h2>The Models were created using Sketch up</h2><br>
+        <div class="text-center">
+        <h2>Creating openings</h2>
+        <img src="{% static 'mywork/img/m1.jpg' %}" class="rounded" alt="...">
+        
+        <br><br><hr><br><h2>Defining building shape</h2>
+        <img src="{% static 'mywork/img/m2.jpg' %}" class="rounded" alt="...">
+        
+        <br><br><hr><br><h2>Defining leading arches </h2>
+        <img src="{% static 'mywork/img/m3.jpg' %}" class="rounded" alt="...">
+        
+        <br><br><hr><br><h2>Defining building areas</h2>
+        <img src="{% static 'mywork/img/m4.jpg' %}" class="rounded" alt="...">
+        
+        <br><br><hr><br><h2>Defining pathways</h2>
+        <img src="{% static 'mywork/img/m5.jpg' %}" class="rounded" alt="...">
+        </div>
+        </center>
+
+</body>
+</html>
+{% endblock %}

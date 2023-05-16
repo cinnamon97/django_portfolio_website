@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block home %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+  <br>
+  
+  <H1 style="color: rgba(0,0,0,.6);
+  background: #e4e3e3;
+  text-shadow: 3px 2px 3px rgba(255,255,255,.2); margin: 15px; text-align: center; height: 30px;" >HOME</H1>
+        
+        
+
+  <main class="mt-5">
+      <div class="container">
+          <!--Section: Content-->
+          <section>
+            <div class="row">
+              <div class="col-md-6 gx-5 mb-4">
+                 <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
+                  <img src="{% static 'main/img/cover.jpg' %}" class="img-fluid" />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+              </div>
+              
+              <div class="col-md-6 gx-5 mb-4">
+                <h4><strong>About Me</strong></h4>
+                <p class="text-muted">
+                I'm a sophmore architecture student at prince migrun university.
+                I live in Al-madinah Al-munawarah.
+                </p>
+                <h4><strong>Why Architecture?</strong></h4>
+                <p class="text-muted">
+                One of the reasons I chose architecture as my major over everything else is because I love how I have 
+                the capability to design structures that can move people both physically and emotionally. 
+                Being able to put so much sensation into an inanimate object is something that renders me speechless every time.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+  </main>
+
+
+{% endblock %}

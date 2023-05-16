@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% block home %}
+{% load static %}
+
+
+<!doctype html>
+<head><meta charset="UTF-8">
+<style>
+    .rounded{width:1000px ;}
+    .d-block w-100{width: min-content; height: 1000px;}
+    .carousel-inner{height: min-content; width: 1050px;}
+</style>
+</head>
+<html lang="en">
+  
+    <br><h1 style="color: rgba(0,0,0,.6);
+    background: #e4e3e3;
+    text-shadow: 3px 2px 3px rgba(255,255,255,.2); margin: 15px; text-align: center; height: 30px;">DESIGNES</h1><br>
+    <!-- Example Code -->
+    
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="2000">
+      <img src="{% static 'mywork/img/d1.jpg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First floor design</h5>
+        <p></p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="{% static 'mywork/img/design2.jpeg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second floor design</h5>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="{% static 'mywork/img/design3.jpeg' %}" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>rooftop design</h5>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+        <img src="{% static 'mywork/img/design4.jpeg' %}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>exterior design</h5>
+        </div>
+      </div>
+  </div>
+  
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>   
+    <!-- End Example Code -->
+
+<center>
+<hr><br><br><br><br>
+<div class="text-center">
+
+<img src="{% static 'mywork/img/p1.jpg' %}" class="rounded" alt="...">
+
+<br><br><hr><br>
+<img src="{% static 'mywork/img/p2.jpg' %}" class="rounded" alt="...">
+
+<br><br><hr><br>
+<img src="{% static 'mywork/img/p3.jpg' %}" class="rounded" alt="...">
+
+<br><br><hr><br>
+<img src="{% static 'mywork/img/p4.jpg' %}" class="rounded" alt="...">
+
+<br><br><hr><br>
+<img src="{% static 'mywork/img/p5.jpg' %}" class="rounded" alt="...">
+</div>
+</center>
+
+  </body>
+</html>
+
+{% endblock %}
